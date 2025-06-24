@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metadata Results</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .results-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .metadata-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        .metadata-key {
+            font-weight: bold;
+            color: #4e73df;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn-back {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="results-container">
+            <div class="header">
+                <h2>Generated Metadata</h2>
+                <p class="text-muted">For file: {{ filename }}</p>
+            </div>
+            
+            <div class="metadata-list">
+                {% for key, value in metadata.items() %}
+                <div class="metadata-item">
+                    <span class="metadata-key">{{ key.replace('_', ' ').title() }}:</span>
+                    {% if value is iterable and value is not string %}
+                        <ul>
+                            {% for item in value %}
+                            <li>{{ item }}</li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <span>{{ value }}</span>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            
+            <a href="/" class="btn btn-primary btn-back">Back to Upload</a>
+        </div>
+    </div>
+</body>
+</html>
