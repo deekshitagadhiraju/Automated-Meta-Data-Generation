@@ -89,6 +89,14 @@ python app.py
 
 Visit `http://localhost:5000` in your web browser.
 
+### Screenshots
+![image](https://github.com/user-attachments/assets/1f29093e-157e-4e2d-a4f8-53c91fdace72)
+![image](https://github.com/user-attachments/assets/5df79977-8e71-4fe9-9f78-6114d811ed5e)
+![image](https://github.com/user-attachments/assets/36643848-983e-4415-a580-0cef430bc866)
+
+
+
+
 ### API Usage
 
 You can also use the metadata generation function directly:
@@ -197,17 +205,6 @@ export FLASK_DEBUG=1
 python app.py
 ```
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
@@ -216,12 +213,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [NLTK](https://www.nltk.org/) for natural language processing
 - [Flask](https://flask.palletsprojects.com/) for the web framework
 
-## Support
-
-If you encounter any issues or have questions:
-
-1. Check the [Issues](https://github.com/yourusername/automated-metadata-generator/issues) section
-2. Create a new issue with detailed information
-3. Include error logs and file types you're testing with
-
----
