@@ -57,6 +57,19 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
+if the above doesn't work then you have to install the following
+```bash
+pip install Flask==2.3.3
+pip install PyPDF2==3.0.1
+pip install PyMuPDF==1.23.8
+pip install python-docx==0.8.11
+pip install pytesseract==0.3.10
+pip install Pillow==10.0.1
+pip install nltk==3.8.1
+pip install Werkzeung==2.3.7
+pip install pdf2image==1.16.3
+pip install PyMuPDF
+```
 
 4. **Configure Tesseract path** (if needed)
 Edit `metadata_generator.py` and update the Tesseract path:
